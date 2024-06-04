@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #31363F;
+}
+h1{
+    font-family: "Roboto Condensed", sans-serif;
+    color: #fc9840;
+}
+p{
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+}
+.clip{
+    clip-path: polygon(50% 0%, 75% 23%, 75% 73%, 50% 100%, 25% 73%, 25% 23%);
+    background-color: #e68028;
+}
+.clip1{
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: #e68028;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-top: -50px;
+    cursor: pointer;
+}
+.clip2{
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: #e68028;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    cursor: pointer;
+}
+.clip3{
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: #e68028;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-top: -50px;
+    cursor: pointer;
+}
