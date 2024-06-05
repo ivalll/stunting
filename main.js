@@ -91,7 +91,7 @@ const quizData = [
         answer: "C. Memenuhi gizi selama masa kehamilan"
     },
     {
-        question: "Pencegahan anak stunting dapa dilakukan dengan cara?",
+        question: "Pencegahan anak stunting dapat dilakukan dengan cara?",
         options: [
             "A. Berkonsultasi dengan petugas kesehatan",
             "B. Mengkonsumsi suplemen peninggi badan",
