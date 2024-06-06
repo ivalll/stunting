@@ -200,7 +200,7 @@ form.addEventListener("submit", (e) => {
             alert("Terima kasih atas partisipasi Anda! Jawaban Anda sangat membantu penelitian kami.");
             setTimeout(function () {
                 location.replace("index.html");
-            }, 3000);
+            }, 1500);
         } else {
             console.error("Error:", response.statusText);
         }
