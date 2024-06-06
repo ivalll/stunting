@@ -1,0 +1,29 @@
+h1{
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+}
+p{
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+}
+h2{
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+}
+figcaption{
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    font-size: 0.8em;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+.materi img{
+    border-radius: 5px;
+}
+.materi p{
+    text-align: justify;
+}
+.materi ol li{
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+}
