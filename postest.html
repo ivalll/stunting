@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postest</title>
+    <link rel="stylesheet" href="css/pretest.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #31363F;">
+    <div class="container mt-5" style="background-color: #31363F;">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <img src="img/gambar-animasi-bergerak-orang-bertanya-1.png" class="img-fluid" alt="" height="150px" width="150px">
+            </div>
+            <div class="col-lg-10 col-md-8 col-sm-6">
+                <h1>Sudah lebih paham mengenai <span style="color: #fc9840;">Stunting?</span></h1>
+                <p>setelah membaca materi dihalaman sebelumnya, tentunya pemahaman kalian mengenai <span style="color: #fc9840;">stunting</span> akan bertambah.</p>
+                <p><span style="color: #fc9840;">isi Post-Test dulu yuk.</span>  Sehingga kami dapat lebih mudah dalam melakukan penilaian untuk penelitian kami.</p>
+            </div>
+        </div>
+        <div class="card" style="background-color: #31363F;">
+            <div class="card-body">
+                <form action="https://sheetdb.io/api/v1/1191bunermr3k" method="post" id="sheetdb-form">
+                    <div class="form-group" id="form" >
+                        <label for="Nama Ibu">Nama Ibu:</label>
+                        <input type="text" class="form-control" id="Nama Ibu" name="data[Nama Ibu]" required />
+                    </div>
+                    <div class="form-group" id="form1" >
+                        <label for="Usia">Usia:</label>
+                        <input type="text" class="form-control" id="Usia" name="data[Usia]" required />
+                    </div>
+                    <div class="form-group" id="form2" >
+                        <label for="Pendidikan Terakhir">Pendidikan Terakhir:</label>
+                        <input type="text" class="form-control" id="Pendidikan Terakhir" name="data[Pendidikan Terakhir]" required />
+                    </div> 
+                    <div class="form-group" id="form3" >
+                        <label for="Pekerjaan">Pekerjaan:</label>
+                        <input type="text" class="form-control" id="Pekerjaan" name="data[Pekerjaan]" required />
+                    </div> 
+                    <div class="form-group" id="form3" >
+                        <label for="Nomor Whatsapp">Nomor Whatsapp:</label>
+                        <input type="text" class="form-control" id="Nomor Whatsapp" name="data[Nomor Whatsapp]" required />
+                    </div> 
+                    <br>
+                    <div class="quiz" id="quiz-container"></div>
+                    <button id="finishButton" type="submit" style="border-radius: 5px;">
+                        Kirim Jawaban
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="second.js"></script>
+</body>
+</html>

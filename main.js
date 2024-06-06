@@ -197,7 +197,7 @@ form.addEventListener("submit", (e) => {
     })
     .then(function (response) {
         if (response.ok) {
-            location.replace("thanks.html"); // Ganti dengan halaman tujuan Anda
+            location.replace("materi.html"); // Ganti dengan halaman tujuan Anda
         } else {
             console.error("Error:", response.statusText);
         }
