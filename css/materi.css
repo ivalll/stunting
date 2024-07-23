@@ -27,3 +27,36 @@ figcaption{
     font-family: "Roboto Condensed", sans-serif;
     color: white;
 }
+
+.custom_input {
+    font-size: 18px;
+    padding: 5px 10px;
+    width: 100%;
+    outline: none;
+    background: #FFFFFF;
+    color: #000000;
+    border: 1px solid #C4D1EB;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px 0px #E2E2E2;
+    transition: .3s ease;
+    margin-bottom: 10px;
+}
+
+.custom_input:focus {
+    background: #FFFFFF;
+    border: 1px solid #fc9840;
+    border-radius: 10px;
+}
+
+.custom_input::placeholder {
+    color: #DDDDDD;
+}
+.comment-btn{
+    border: none;
+    outline: none;
+    background-color: #fc9840;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}

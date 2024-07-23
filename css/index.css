@@ -55,3 +55,15 @@ p{
     margin-top: -50px;
     cursor: pointer;
 }
+.navbar-dark .navbar-toggler {
+    border: none;
+    outline: none;
+}
+.navbar-dark .navbar-toggler:focus {
+    border: none;
+    outline: none;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #fc9840;
+}

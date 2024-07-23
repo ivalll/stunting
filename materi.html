@@ -11,6 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: #31363F;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link"  href="pretest.html">Pre-Test</a>
+                    <a class="nav-link active" aria-current="page"  style="color: #fc9840;" href="materi.html">Materi</a>
+                    <a class="nav-link" href="postest.html">Post-test</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="container mt-5" style="background-color: #31363F;">
         <div class="row">
             <div class="col-lg-2 col-md-4 col-sm-6">
@@ -27,11 +44,27 @@
             <div class="col-sm-12 col-md-12">
                 <video src="video/Definisi .mp4" controls class="img-fluid"></video>
             </div>
+            <div class="d-flex flex-row">
+                <form action="https://sheetdb.io/api/v1/7nv9lt0964g0p" method="post" id="sheetdb-form">
+                    <label for="name_1" style="color: #fc9840; margin-bottom:10px;">Komentar</label>
+                    <input type="text" id="name_1" name="name_1" placeholder="Nama" class="custom_input">
+                    <input type="text" id="comment_1" name="comment_1" placeholder="komentar..." class="custom_input">
+                    <button type="submit" class="comment-btn">Kirim Komentar</button>
+                </form>
+            </div>
         </div>
         <div class="row mt-5">
             <h2>Ciri-Ciri <span style="color: #fc9840;">Stunting</span></h2>
             <div class="col-sm-12 col-md-12">
                 <video src="video/Ciri ciri.mp4" controls class="img-fluid"></video>
+            </div>
+            <div class="d-flex flex-row">
+                <form action="https://sheetdb.io/api/v1/7nv9lt0964g0p" method="post" id="sheetdb-form">
+                    <label for="name_2" style="color: #fc9840; margin-bottom:10px;">Komentar</label>
+                    <input type="text" id="name_2" name="name_2" placeholder="Nama" class="custom_input">
+                    <input type="text" id="comment_2" name="comment_2" placeholder="komentar..." class="custom_input">
+                    <button type="submit" class="comment-btn">Kirim Komentar</button>
+                </form>
             </div>
         </div>
         <div class="row mt-5">
@@ -39,17 +72,41 @@
             <div class="col-sm-12 col-md-12">
                 <video src="video/penyebab.mp4" controls class="img-fluid"></video>
             </div>
+            <div class="d-flex flex-row">
+                <form action="https://sheetdb.io/api/v1/7nv9lt0964g0p" method="post" id="sheetdb-form">
+                    <label for="name_3" style="color: #fc9840; margin-bottom:10px;">Komentar</label>
+                    <input type="text" id="name_3" name="name_3" placeholder="Nama" class="custom_input">
+                    <input type="text" id="comment_3" name="comment_3" placeholder="komentar..." class="custom_input">
+                    <button type="submit" class="comment-btn">Kirim Komentar</button>
+                </form>
+            </div>
         </div>
         <div class="row mt-5">
             <h2>Dampak <span style="color: #fc9840;">Stunting</span></h2>
             <div class="col-sm-12 col-md-12">
                 <video src="video/Dampak stunting.mp4" controls class="img-fluid"></video>
             </div>
+            <div class="d-flex flex-row">
+                <form action="https://sheetdb.io/api/v1/7nv9lt0964g0p" method="post" id="sheetdb-form">
+                    <label for="name_4" style="color: #fc9840; margin-bottom:10px;">Komentar</label>
+                    <input type="text" id="name_4" name="name_4" placeholder="Nama" class="custom_input">
+                    <input type="text" id="comment_4" name="comment_4" placeholder="komentar..." class="custom_input">
+                    <button type="submit" class="comment-btn">Kirim Komentar</button>
+                </form>
+            </div>
         </div>
         <div class="row mt-5">
             <h2>Pencegahan <span style="color: #fc9840;">Stunting</span></h2>
             <div class="col-sm-12 col-md-12">
                 <video src="video/Pencegahan .mp4" controls class="img-fluid"></video>
+            </div>
+            <div class="d-flex flex-row">
+                <form action="https://sheetdb.io/api/v1/7nv9lt0964g0p" method="post" id="sheetdb-form">
+                    <label for="name_5" style="color: #fc9840; margin-bottom:10px;">Komentar</label>
+                    <input type="text" id="name_5" name="name_5" placeholder="Nama" class="custom_input">
+                    <input type="text" id="comment_5" name="comment_5" placeholder="komentar..." class="custom_input">
+                    <button type="submit" class="comment-btn">Kirim Komentar</button>
+                </form>
             </div>
         </div>
         <div class="row mt-5 mb-5">
@@ -63,5 +120,35 @@
             </div>
         </div>
     </div>
+    <script>
+        var form = document.getElementById("sheetdb-form");
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent the form from submitting traditionally
+            var formData = new FormData(form);
+
+            fetch(form.action, {
+                method: "POST",
+                body: formData
+            })
+                .then(function (response) {
+                    return response.json(); // Parse the JSON from the response
+                })
+                .then(function (data) {
+                    // Check if the response indicates success
+                    if (data && data.created === 1) {
+                        alert("Komentar Telah Terkirim");
+                    } else {
+                        console.error("Error: Unexpected response");
+                    }
+                })
+                .catch(function (error) {
+                    console.error("Error:", error);
+                });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
