@@ -1,43 +1,70 @@
 // Data pertanyaan dari file .json (contoh)
 const quizData = [
     {
-        question: "Apa yang ibu ketahui tentang stunting?",
+        question: "Apa yang ibu ketahui tentang <i>stunting</i>?",
         options: [
-            "A. Kondisi gagal tumbuh pada anak sehingga anak lebih terlalu pendek pada seusiannya",
+            "A. Kondisi dimana anak mengalami gangguan pertumbuhan, sehingga tinggi badan anak tidak sesuai dengan usianya",
             "B. Kondisi penyakit pada anak sehingga menyebabkan anak gagal tumbuh",
             "C. Kondisi kelainan sehingga menyebabkan penyakit yang membuat anak pendek untuk usianya"
         ],
-        answer: "A. Kondisi gagal tumbuh pada anak sehingga anak lebih terlalu pendek pada seusiannya"
+        answer: "A. Kondisi dimana anak mengalami gangguan pertumbuhan, sehingga tinggi badan anak tidak sesuai dengan usianya"
     },
     {
-        question: "Bagaimana cara ibu untuk mengetahui anak tergolong stunting ?",
+        question: "Kondisi dimana anak mengalami gangguan pertumbuhan, sehingga tinggi badan anak tidak sesuai dengan usianya, disebut juga dengan istilah ?",
         options: [
-            "A. Mengukur tinggi badan anak",
-            "B. Mengukur panjang kaki anak",
-            "C. Mengukur berat badan anak"
+            "A. Stunting",
+            "B. Wasting",
+            "C. Obesitas"
         ],
-        answer: "A. Mengukur tinggi badan anak"
+        answer: "A. Stunting"
     },
     {
-        question: " Berikut yang tidak termasuk penyebab stunting pada anak adalah ?",
+        question: "Dibawah ini salah satu penyebab berat badan lahir rendah pada anak stunting adalah?",
         options: [
-            "A. Kurangnya pengetahuan ibu tentang pola asuh anak",
+            "A. Gizi ibu saat hamil",
+            "B. Usia ibu dibawah 35 tahun",
+            "C. Usia ibu lebih dari 20 tahun "
+        ],
+        answer: "A. Gizi ibu saat hamil"
+    },
+    {
+        question: "Berikut yang tidak termasuk penyebab stunting pada anak adalah ?",
+        options: [
+            "A. Faktor kurangnya pengetahuan ibu",
             "B. Faktor kurangnya gizi pada anak",
             "C. Faktor keturunan"
         ],
         answer: "C. Faktor keturunan"
     },
     {
-        question: "Apa ciri-ciri stunting pada anak ?",
+        question: "Bagaimana cara ibu untuk mengetahui anak tergolong stunting ?",
         options: [
-            "A. Nafsu makan anak menurun",
-            "B. Tinggi badan anak lebih pendek dibandingkan anak lain seusianya",
-            "C. Berat badan anak lebih kurus dibanding anak lain seusianya"
+            "A. Mengukur tinggi badan anak",
+            "B. Mengukur panjang kaki anak ",
+            "C. Mengukur berat badan anak"
         ],
-        answer: "B. Tinggi badan anak lebih pendek dibandingkan anak lain seusianya"
+        answer: "A. Mengukur tinggi badan anak"
     },
     {
-        question: "Pada usia berapa anak-anak paling rentan mengalami stunting? Apa ciri-ciri stunting pada anak ?",
+        question: "Ciri-ciri stunting pada anak ?",
+        options: [
+            "A. Anak yang memiliki tubuh lebih pendek",
+            "B. Anak yang memilii tubuh lebih kurus",
+            "C. Anak yang memiliki tubuh gemuk "
+        ],
+        answer: "A. Anak yang memiliki tubuh lebih pendek"
+    },
+    {
+        question: "Dibawah ini merupakan salah satu ciri stunting dengan menurunnya kemampuan anak adalah?",
+        options: [
+            "A. Kemampuan belajar anak meningat",
+            "B. Kemampuan focus memori belajar anak tidak baik",
+            "C. Kemampuan anak meningkat "
+        ],
+        answer: "B. Kemampuan focus memori belajar anak tidak baik"
+    },
+    {
+        question: "Pada usia berapa anak-anak paling rentan mengalami stunting? ",
         options: [
             "A. 0-2 tahun ",
             "B. 3-5 tahun ",
@@ -46,16 +73,16 @@ const quizData = [
         answer: "A. 0-2 tahun "
     },
     {
-        question: "Bagaimana dampak yang akan terjadi pada anak yang mengalami stunting ?",
+        question: "Apa dampak jangka pendek pada anak yang mengalami stunting?",
         options: [
-            "A. Kemampuan belajar anak rendah",
-            "B. Anak menjadi pemalu",
-            "C. Anak menjadi mudah lelah"
+            "A. Meningkatan potensi sakit dan kematian pada anak",
+            "B. Meningkatkan potensi belajar pada anak",
+            "C. Meningkatkan potensi anak menjadi lebih aktif"
         ],
-        answer: "A. Kemampuan belajar anak rendah"
+        answer: "A. Meningkatan potensi sakit dan kematian pada anak"
     },
     {
-        question: "Apa dampak jangka panjang akibat stunting pada anak saat dewasa ?",
+        question: "Apa dampak jangka panjang pada anak yang mengalami stunting?",
         options: [
             "A. Beresiiko terkena penyakit TBC",
             "B. Beresiko terkena penyakit malaria",
@@ -64,20 +91,11 @@ const quizData = [
         answer: "C. Beresiko terkena penyakit diabetes"
     },
     {
-        question: "sampai usia berapakah hanya ASI Eksklusif saja yang diberikan pada bayi?",
-        options: [
-            "A. 0-4 bulan",
-            "B. 0-6 bulan",
-            "C. 0-8 bulan"
-        ],
-        answer: "B. 0-6 bulan"
-    },
-    {
         question: "Apa saja ciri-ciri stunting pada anak yang beranjak remaja…",
         options: [
-            "A. Anak lebih aktif",
+            "A. Pinggul membesar ",
             "B. Pubertas terhambat",
-            "C. Anak memiliki badan yang gemuk"
+            "C. Pertumbuhan payudara "
         ],
         answer: "B. Pubertas terhambat"
     },
@@ -93,47 +111,38 @@ const quizData = [
     {
         question: "Pencegahan anak stunting dapat dilakukan dengan cara?",
         options: [
-            "A. Berkonsultasi dengan petugas kesehatan",
+            "A. Berkonsultasi dengan petugas kesehatan ",
             "B. Mengkonsumsi suplemen peninggi badan",
             "C. Berolahraga secara teratur"
         ],
         answer: "A. Berkonsultasi dengan petugas kesehatan"
     },
     {
-        question: "Nutrisi apa yang paling penting untuk mencegah stunting pada anak? ",
-        options: [
-            "A. Protein dan vitamin A ",
-            "B. Lemak dan karbohidrat ",
-            "C. Gula dan garam "
-        ],
-        answer: "A. Protein dan vitamin A "
-    },
-    {
         question: "Bagaimana cara paling efektif untuk mencegah stunting pada anak? ",
         options: [
-            "A. Mengurangi waktu bermain di luar ruangan ",
-            "B. Memberikan vaksin secara rutin ",
-            "C. Memberikan makanan bergizi seimbang dan ASI eksklusif selama 6 bulan pertama"
+            "A. Mengurangi waktu bermain di luar ruangan",
+            "B. Memberikan vaksin secara rutin",
+            "C. Memberikan ibu makanan bergizi seimbang"
         ],
-        answer: "C. Memberikan makanan bergizi seimbang dan ASI eksklusif selama 6 bulan pertama"
+        answer: "C. Memberikan ibu makanan bergizi seimbang "
     },
     {
-        question: "Apa indikasi fisik yang paling umum terlihat pada anak yang mengalami stunting? ",
+        question: "Apakah ciri stunting pada anak yang dapat mempengaruhi pertumbuhan : ",
         options: [
-            "A. Kulit pucat ",
-            "B. Berat badan berlebih ",
-            "C. Tinggi badan lebih pendek dari standar usianya"
+            "A. Pertumbuhan gigi melambat",
+            "B. Bermain dengan teman sebaya",
+            "C. Berbicara dalam dua bahasa"
         ],
-        answer: "C. Tinggi badan lebih pendek dari standar usianya"
+        answer: "A. Pertumbuhan gigi melambat"
     },
     {
-        question: "Program pemerintah apa yang bertujuan untuk menurunkan angka stunting di Indonesia? ",
+        question: "Faktor lingkungan yang dapat menyebabkan stunting termasuk: ",
         options: [
-            "A. Program Keluarga Harapan (PKH)",
-            "B. Program Indonesia Pintar ",
-            "C. Program Seribu Hari Pertama Kehidupan (1000 HPK)"
+            "A. Kurangnya eksposur terhadap sinar matahari",
+            "B. Lingkungan yang tidak bersih dan sanitasi yang buruk",
+            "C. Paparan terhadap teknologi modern"
         ],
-        answer: "C. Program Seribu Hari Pertama Kehidupan (1000 HPK)"
+        answer: "A. Kurangnya eksposur terhadap sinar matahari"
     },
     // Tambahkan pertanyaan lainnya di sini
 ];
